@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Формы</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form method="post" oninput="result.value=parseInt(range.value)">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <div class="form-row">
+                <label>ID отзыва
+
+                    <input type="text" name="id_comment" value="12345" disabled />
+
+                </label>
+                <input type="text" name="id_comment" value="12345" class="hidden" />
+                <label>Имя путешественника
+
+                    <input type="text" name="name" required />
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Отзыв о поездке</legend>
+            <div class="form-row">
+                <label>Страна визита
+
+                    <input type="text" name="country" required />
+                </label>
+                <label>Город
+                    <select name="city" size="1">
+                        <option value="Осло">Осло</option>
+                        <option value="Берген">Берген</option>
+                        <option value="Ставангер">Ставангер</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>Оценка <br>
+                    0<input class="range" type="range" step="1" min="0" max="10" value="0" id="range" name="assessment" />10
+                </label>
+                <output class="range_result" name="result">0</output>
+            </div>
+            <div class="form-row">
+                <label class="textarea">Текст отзыва
+
+                    <textarea rows="10" name="comment_text" required></textarea>
+                </label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Оценка отеля</legend>
+            <div class="form-row">
+
+                <label>Название отеля
+
+                    <input type="text" name="hotel_name" placeholder="Название по-английски" required />
+                </label>
+                <label>Дата въезда
+
+                    <input type="date" name="arrival_date" required />
+                </label>
+
+            </div>
+            <div class="form-row">
+                <label>Цвет кроватки
+
+                    <input type="color" name="bed_color" />
+
+                </label>
+                <label>Оценка обедов
+                    <select name="dish_assesment" size="1">
+                        <option value="Подушечки оближешь">Подушечки оближешь</option>
+                        <option value="Норм">Норм</option>
+                        <option value="Фу кака">Фу кака</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>Самая вкусная рыба
+                    <select name="fish_choice" multiple required>
+                        <option value="Норвежский лосось">Норвежский лосось</option>
+                        <option value="Зубатка">Зубатка</option>
+                        <option value="Морской окунь">Морской окунь</option>
+                        <option value="Карась">Карась</option>
+                        <option value="Зеркальный карп">Зеркальный карп</option>
+                    </select>
+                </label>
+            </div>
+
+        </fieldset>
+        <div class="form-row btns">
+            <input class="form_btn" type="submit" value="Оценить" />
+            <input class="form_btn" type="reset" value="Сбросить" />
+        </div>
+    </form>
+</body>
+
+</html>

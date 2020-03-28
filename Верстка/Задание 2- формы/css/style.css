@@ -1,0 +1,84 @@
+body {
+    color: #000000;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 14px;
+}
+
+form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    vertical-align: middle;
+
+}
+
+output {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+input,
+select {
+    width: 200px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+legend {
+    font-size: 16px;
+    color: #767272;
+}
+
+.form-row {
+    display: block;
+    padding: 10px;
+}
+
+label {
+    font-size: 14px;
+    display: inline-block;
+    width: 200px;
+    padding-right: 40px;
+}
+
+
+
+.range {
+    width: 150px;
+}
+
+.btns {
+    text-align: center;
+}
+
+.form_btn {
+    background: #2c3e50;
+    color: #fff;
+    width: 100px;
+    margin: 5px;
+}
+.hidden{
+    display:none;
+}
