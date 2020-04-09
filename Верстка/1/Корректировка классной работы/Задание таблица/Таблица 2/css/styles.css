@@ -1,0 +1,21 @@
+table {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    border:1px solid black;
+}
+td{
+    padding: 5px;
+}
+.table_1{
+    margin: auto;
+}
+.table_1{
+    table-layout: fixed;
+    width:40%;
+}
+.table_4{
+    margin-bottom: 20px;
+}

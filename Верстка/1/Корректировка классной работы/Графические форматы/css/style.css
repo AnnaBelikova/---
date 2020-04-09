@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.48;
+    color: #333;
+    background: #ccc;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-bottom: 0;
+}
+hr{
+    margin-top: 0;
+}
+p{
+     text-indent: 2em;
+}
+.content{
+    background: #fff;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+}
+.img-fw{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.3);
+}
+.mb20{
+    margin-bottom: 20px;
+}
+ul{
+    list-style-image:url(../img/tick.png);
+}
+ol{
+    list-style: lower-alpha;
+}
