@@ -57,33 +57,37 @@ body {
 
 .move-bg {
 
- background: -webkit-linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
- background: -o-linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
- background: linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
-background-position: center;
+    background: -webkit-linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
+    background: -o-linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
+    background: linear-gradient(rgba(64, 116, 185, 0.5), rgba(64, 116, 185, 0.5), rgba(0, 153, 204, .9)), url(../assets/alien_full.jpg) no-repeat;
+    background-position: center;
 }
- 
 
-.move-bg:hover{
-    animation: move-bg  5s infinite ease-in-out;
+
+.move-bg:hover {
+    animation: move-bg 5s infinite ease-in-out;
     animation-play-state: running;
 }
 
 
-@keyframes move-bg{
-    0%{
+@keyframes move-bg {
+    0% {
         background-position: center center;
     }
-    25%{
+
+    25% {
         background-position: 51% 45%;
     }
-    50%{
+
+    50% {
         background-position: 52% 50%;
     }
-    75%{
+
+    75% {
         background-position: 51% 45%;
     }
-    100%{
+
+    100% {
         background-position: center center;
     }
 }
